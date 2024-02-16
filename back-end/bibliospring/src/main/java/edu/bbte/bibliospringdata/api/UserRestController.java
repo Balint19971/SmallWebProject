@@ -53,25 +53,4 @@ public class UserRestController {
         URI uri = URI.create("/users/" + userOutDTO.getId());
         return ResponseEntity.created(uri).body(userOutDTO);
     }
-//
-//    @GetMapping("/all")
-//    public List<User> getAll(){
-//        return userService.getAll();
-
-//    }
-//    @GetMapping("/user")
-//    @ResponseBody
-//    public User getUserByName(@RequestParam(value = "username", required = true) String username){
-////        return userRepository.findByUsername(username);
-////        return userService.getById(username);
-
-//    }
-//    @GetMapping("/user")
-////    http://localhost:8080/users/user?id=3
-//    public User getById(@RequestParam(value = "id") Long id){
-//        return userService.getById(id);
-
-//    }
-
-
 }
